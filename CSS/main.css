@@ -132,16 +132,22 @@ body {
 
 }
 
-@media (max-width: 920px){
-    .title-words{
-        font-size: 25px;
-    }
-}
-@media (min-width: 920px){
+@media (min-width:1001px) and (max-width:100000px){
     .title-words{
         font-size:30px;
     }
 }
+@media (max-width:1000px) and (min-width:900px){
+    .title-words{
+        font-size:25px;
+    }
+}
+@media (max-width:899px) and (min-width:760px){
+    .title-words{
+        font-size:18px;
+    }
+}
+
 
 @media (min-width: 992px) {
   .featurette-heading {
@@ -170,7 +176,7 @@ body {
     clear: both;
     border-top:1px solid;
     border-top-color:lightgrey;
-    height: 210px;
+    max-height: 210px;
     width: 100%;
     background-color: white;
     padding-bottom: 5px;
@@ -179,6 +185,18 @@ body {
 .footer p {
     color: darkgray; 
     text-align: center;
+}
+@media (max-width:700px){
+    .footer>div>div>img{
+        width:80%;
+        height:auto;
+    }
+    .footer>div>div>p{
+        display:none;
+    }
+    .footer{
+        height: auto;
+    }
 }
 
 .copyright {
@@ -249,7 +267,257 @@ body {
     width: 291px;
 }
 
+.navbar-inverse {
+   background: rgba(62,195,246,0);
+  border-bottom: none;
+}
+.navbar-inverse .navbar-toggle {
+  border: 1px solid #333;
+  border-color: rgba(255,255,255,0.7);
+}
 
-#myCarousel {
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+   border-color: transparent;
+  @media (max-width: 767px) {
+    background: rgba(255,255,255,0.75);
+  }
+}
+.navbar-inverse .navbar-nav > li > a {
+color: #ff7a00;
+    width:100%;
+    text-align:center;
+
+}
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus, .navbar-nav>.active{
+color: #ff7a00;
+    background-color:#F0F0F0;
+
+}
+ul.nav {
+}
+
+/* *********************************
+           Toolbar Logo
+  ********************************** */
+.small-logo-container {
+    padding-top: $navbar-height;
+    height: $navbar-height;
+    overflow: hidden;
+    position: absolute;
+  }
+
+.small-logo {
+  color: white;
+  font-size: 2em;
+  padding-bottom: $small-logo-padding;
+}
+
+/* *********************************
+           Big Logo
+  ********************************** */
+.big-logo-row {
+  background: white;
+       }
+  .big-logo-container {
+    padding-top: $navbar-height;
+  }
+  
+  h1 {
+    font-size: 3em;
+    margin:0;
+    padding:0 0 $big-logo-padding 0;
     
+    @media (min-width: 400px) { font-size: 4.5em; }
+    @media (min-width: 440px) { font-size: 5.5em; }
+    @media (min-width: 500px) { font-size: 6.5em; }
+    @media (min-width: 630px) { font-size: 7.5em;  }
+    @media (min-width: 768px) { font-size: 9em; padding-bottom: $big-logo-padding * 2; }
+    @media (min-width: 1200px) { font-size: 12em; }
+  }
+.pubs{
+    list-style-type:none;
+    list-style:none;
+    color:#ff7a00;
+    margin:auto;
+    overflow:hidden;
+    padding:0;
+    text-align:justify;
+    width:100%;
+    display:table;
+}
+.pubs>li{
+    display:table-cell;
+    text-align:center;
+    width:50%;
+    margin:auto;
+    padding-top:10px;
+    padding-bottom:10px;
+    
+}
+.pubs>li>a{
+    text-decoration:none;
+    text-align:center;
+    color:#ff7a00;
+    font-size:20px;
+}
+.pubs>.active, .pubs>li:hover{
+    background-color:#F0F0F0;
+}
+.publication {
+    width:55%;
+    color:black;
+    text-align:justify;
+    margin-right:25%;
+    margin-left:20%;
+    list-style-image:url(/Pictures/bullet.jpg);
+    
+}
+.publication li a{
+    color:black;
+    text-decoration:none;
+}
+.publication li a:hover{
+    color:#ff7a00;
+    text-decoration:underline;
+}
+.row>.col-lg-3>a{
+    text-decoration:none;
+    color:#5a5a5a
+}
+.heading {
+    text-align:center;
+    margin:auto;
+}
+.name{
+    font-size: 22px;
+}
+.heading-people {
+    text-align:center;
+    margin:auto;
+}
+.people-menu {
+    width:20%;
+    float:left;
+    text-align:center;
+    align-content:center;
+}
+.people-menu a{
+    color:#5a5a5a;
+    width:80%;
+    border:none;
+    font-size:20px;
+}
+.people-menu>a:hover, .people-menu a:focus, .people-menu a:active, .people-menu a:target{
+    background-color:white;
+    color:#ff7a00;
+}
+@media (min-width:1150px){
+    .people-menu>.dropdown-menu{
+        display:block;
+        border:none;
+        box-shadow:none;
+    }
+    .back-button{
+        display:none;
+    }
+}
+.people-menu>.dropdown-menu>li>a{
+    color:black;
+    text-align:left;
+    font-size:20px;
+    padding-left:5px;
+    border:none;
+    white-space: normal;
+}
+.people-menu>.dropdown-menu>.active a, .people-menu>.dropdown-menu>.active a:hover{
+    color:#ff7a00;
+    background-color:#F0f0f0;
+}
+.people-menu>.dropdown-menu>li>a:hover{
+    color:#ff7a00;
+    background-color:white;
+}
+.people-info{
+    width:80%;
+    float:right;
+}
+.people-info h4{
+    font-size:20px;
+}
+.people-info>.bio-text{
+    font-size:16px;
+}
+.people-info img{
+    float:left;
+    margin-right:2%;
+    width:10%;
+    min-width:100px;
+}
+.contact{
+    width:100%;
+}
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+.research{
+    font-size:19px;
+}
+.back-button{
+    width:20%;
+    text-align:center;
+}
+.back-button a{
+    width:30%;
+    background-color:white;
+}
+.back-button a img{
+    -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+.research-info{
+    width:80%;
+    float:right;
+}
+.research-text{
+   font-size:18px; 
+}
+.facilities{
+    width:60%;
+    margin:auto;
+    text-align:Justify;
+}
+.facilities>.col-lg-4{
+    text-align:center;
+}
+.facilities>.col-lg-4 img{
+    /*width:75%;*/
+}
+.facilities>.col-lg-6{
+    text-align:center;
+}
+.facilities>.col-lg-6 img{
+    /*width:75%;*/
+}
+.about{
+    text-align:center;
+    margin:auto;
+    width:60%;
+}
+.about p, .about ol, .about ul{
+    text-align:justify;
+    font-size:18px;
+    list-style-image:url(/Pictures/bullet.jpg)
+}
+.about img{
+    width:70%;
+}
+.about h3{
+    text-align:justify;
+    font-size:20px;
 }

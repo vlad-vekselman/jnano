@@ -33,7 +33,7 @@
     <link href="Css/main.css" rel="stylesheet">
       
   </head>
-   <style>
+  <!-- <style>
     /* *********************************
            Variables
   ********************************** */
@@ -61,12 +61,14 @@ $small-logo-padding: 2px; /*// of bottom padding to look nice*/
   }
 }
 .navbar-inverse .navbar-nav > li > a {
-color: black;
-  
+color: #ff7a00;
+    width:100%;
+    text-align:center;
 
 }
-.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus, .navbar-nav>.active{
 color: #ff7a00;
+    background-color:#F0F0F0;
 
 }
 ul.nav {
@@ -110,9 +112,8 @@ ul.nav {
     @media (min-width: 768px) { font-size: 9em; padding-bottom: $big-logo-padding * 2; }
     @media (min-width: 1200px) { font-size: 12em; }
   }
-}
 
-    </style>
+    </style> -->
     
     
 <!-- NAVBAR
@@ -120,31 +121,7 @@ ul.nav {
     <body style="background-color:#F0F0F0">
         
         <div class="content" style="width:75%; margin:auto; background-color:white;">
-            <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-                <div class="container">
-                    <div class="navbar-header">
-                      <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                      </button> -->
-                      <div class="small-logo-container">
-                        <p class="small-logo" href="#">Laboratory for
-                        Plasma Nanosynthesis</p>
-                      </div>
-                    </div>
-                    <!--<div class="navbar-collapse collapse">
-
-                      <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="#">Active</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                      </ul>
-                    </div> --> <!--/.nav-collapse -->
-                  </div>
-                </div>
+            
 
                 <!--<div class="container-fluid big-logo-row">
                   <div class="container">
@@ -192,7 +169,7 @@ ul.nav {
 
 	           <td style="width:225px; padding-left:15px; padding-right:15px">
                    <a href="http://www.pppl.gov">
-                        <img style="border:0px solid #5e5e70;" src="Pictures/pppl-logo-3.png" width="220px" align="right">
+                        <img style="border:0px solid #5e5e70;" src="Pictures/pppl-logo-3.png" width="200px" align="right">
                    </a>
 	           </td>
 	       </tr>
@@ -213,28 +190,28 @@ ul.nav {
               </button>
               <!-- <a class="navbar-brand" href="#">Project name</a> -->
             </div>
-              <div id="dropnav" class="dropdown-menu" style="width:auto; margin:auto; padding:0; text-align:center">
-                  <ul class="nav navbar-nav" style="width:auto; margin:auto; text-align:center; display:table-cell">
+              <div id="dropnav" class="dropdown-menu" style="width:auto; margin:0; padding:1px;">
+                  <ul class="nav navbar-justified" style="width:100%; text-align:center;margin:auto;">
                       <li class="active">
                           <a href="index.html">Home</a>
-                      </li> <br>
+                      </li>
                       <li>
-                          <a href="#about">About
+                          <a href="about.html">About
                           </a>
-                      </li> <br>
+                      </li> 
                       <li>
-                          <a href="#research">Research
+                          <a href="research.html">Research
                           </a>
-                      </li> <br>
-                      <li><a href="#people">People</a></li> <br>
-                      <li><a href="#facilities">Facilities</a></li> <br>
+                      </li> 
+                      <li><a href="people.html">People</a></li> 
+                      <li><a href="in-situ-diagnostics.html">Facilities</a></li> 
                       <li>
-                          <a href="#publications" >Publications</a>
+                          <a href="journals.html" >Publications</a>
                       </li> 
                   </ul>
               </div>
             <div id="navbar" class="navbar-collapse collapse" style="width:100%; margin:auto; padding:0; border-bottom:2px solid; border-bottom-color:#ff7a00;">
-              <ul class="nav navbar-nav" style="width:96%; margin:auto;">
+              <!--<ul class="nav navbar-nav" style="width:96%; margin:auto;">
                   <li class="active" >
                       <a href="index.html" style="margin-left:0;">Home</a>
                   </li>
@@ -300,7 +277,20 @@ ul.nav {
                     <li><a href="#">One more separated link</a></li>
                   </ul>
                 </li> -->
-              </ul>
+              <!--</ul> -->
+                <ul class="nav nav-justified">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="people.html">People</a></li>
+            <li><a href="in-situ-diagnostics.html">Facilities</a></li>
+            <li>
+                  <a href="journals.html" >Publications
+                  </a>  
+            </li>
+          </ul>
             </div>
           </div>
         </nav>
@@ -342,11 +332,11 @@ ul.nav {
           </div>
             
           <div class="events-bar" id="accordion" style="margin-left:10px;">          
-              <div class="panel">
+              <div class="panel" style="text-align:left">
                   <button type="button" class="btn upbuttons" data-toggle="collapse" data-parent="#accordion" data-target="#event-zero">PhD defense of Yao-Wen Yeh
                   </button>
                   <div id="event-zero" class="collapse">
-                      <p style="float:left; margin-top: 0px; margin-left: 15px; width:500px">
+                      <p style="float:left; margin-top: 0px; margin-left: 15px; width:60%">
                                     Yao-Wen Yeh's thesis "<i>Bottom-Up Syntheses and Characterization of One Dimensional Nanomaterials by Hydrothermal and Arc Discharge Methods</i>"
                                     <br><i>May 10, 2017
                                     <br>PPPL, NJ </i>
@@ -358,7 +348,7 @@ ul.nav {
                                 44th ICOPS
                   </button>
                   <div id="event-one" class="collapse">
-                      <p style="float:left; margin-top: 0px; margin-left: 15px; width:500px">
+                      <p style="float:left; margin-top: 0px; margin-left: 15px; width:60%">
                           <a href="http://www.shu.edu/international-conference-plasma-science/" target="_blank">
                                     44th International Conference on Plasma Science (ICOPS) 
                           </a>
@@ -371,7 +361,7 @@ ul.nav {
                                 59th APS DPP meeting
                   </button>
                   <div id="event-two" class="collapse">
-                      <p style="float:left; margin-top: 0px; margin-left: 15px; width:500px">
+                      <p style="float:left; margin-top: 0px; margin-left: 15px; width:60%">
                           <a href="http://www.aps.org/meetings/meeting.cfm?name=DPP17" target="_blank">
                                     59th Annual Meeting of the APS Division of Plasma Physics
                           </a>
@@ -384,7 +374,7 @@ ul.nav {
                                     PhD defense of James Mitrani
                   </button>
                   <div id="event-three" class="collapse">
-                      <p style="float:left; margin-top: 0px; margin-left: 15px; width:500px">
+                      <p style="float:left; margin-top: 0px; margin-left: 15px; width:60%">
                                     James Mitrani's thesis "<i>
                           <a href="http://dataspace.princeton.edu/jspui/handle/88435/dsp01z316q4112" target="_blank">
                                     Monitoring nanoparticle synthesis in a carbon arc discharge environment, in situ
@@ -423,7 +413,7 @@ ul.nav {
             </div>
         </div>
         <div class="copyright">
-            <p>&copy; 2015 Princeton Plasma Physics Laboratory. All rights reserved.</p>
+            <p>&copy; 2017 Princeton Plasma Physics Laboratory. All rights reserved.</p>
         </div>
       </footer>
 
