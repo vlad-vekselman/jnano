@@ -291,7 +291,7 @@ color: #ff7a00;
 }
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus, .navbar-nav>.active{
 color: #ff7a00;
-    background-color:#F0F0F0;
+border: 2px solid #ff7a00;
 
 }
 ul.nav {
@@ -362,7 +362,7 @@ ul.nav {
     font-size:20px;
 }
 .pubs>.active, .pubs>li:hover{
-    background-color:#F0F0F0;
+    border: 2px solid #ff7a00;
 }
 .publication {
     width:55%;
@@ -412,6 +412,7 @@ ul.nav {
 .people-menu>a:hover, .people-menu a:focus, .people-menu a:active, .people-menu a:target{
     background-color:white;
     color:#ff7a00;
+    border: 2px solid #ff7a00;
 }
 @media (min-width:1150px){
     .people-menu>.dropdown-menu{
@@ -433,11 +434,12 @@ ul.nav {
 }
 .people-menu>.dropdown-menu>.active a, .people-menu>.dropdown-menu>.active a:hover{
     color:#ff7a00;
-    background-color:#F0f0f0;
+    border: 2px solid #ff7a00;
 }
 .people-menu>.dropdown-menu>li>a:hover{
     color:#ff7a00;
     background-color:white;
+    border: 2px solid ff7a00;
 }
 .people-info{
     width:80%;

@@ -2148,10 +2148,11 @@ display:table-cell;
 float:none
 }
 .table>tbody>tr.active>td,.table>tbody>tr.active>th,.table>tbody>tr>td.active,.table>tbody>tr>th.active,.table>tfoot>tr.active>td,.table>tfoot>tr.active>th,.table>tfoot>tr>td.active,.table>tfoot>tr>th.active,.table>thead>tr.active>td,.table>thead>tr.active>th,.table>thead>tr>td.active,.table>thead>tr>th.active{
-background-color:#f5f5f5
+background-color:white
 }
 .table-hover>tbody>tr.active:hover>td,.table-hover>tbody>tr.active:hover>th,.table-hover>tbody>tr:hover>.active,.table-hover>tbody>tr>td.active:hover,.table-hover>tbody>tr>th.active:hover{
-background-color:#e8e8e8
+background-color:white
+border: 1px #ff7a00   
 }
 .table>tbody>tr.success>td,.table>tbody>tr.success>th,.table>tbody>tr>td.success,.table>tbody>tr>th.success,.table>tfoot>tr.success>td,.table>tfoot>tr.success>th,.table>tfoot>tr>td.success,.table>tfoot>tr>th.success,.table>thead>tr.success>td,.table>thead>tr.success>th,.table>thead>tr>td.success,.table>thead>tr>th.success{
 background-color:#dff0d8
@@ -2187,7 +2188,7 @@ width:100%;
 margin-bottom:15px;
 overflow-y:hidden;
 -ms-overflow-style:-ms-autohiding-scrollbar;
-border:1px solid #ddd
+border:1px solid #ff7a00
 }
 .table-responsive>.table{
 margin-bottom:0
@@ -2705,8 +2706,8 @@ border-color:#adadad
 }
 .btn-default.active.focus,.btn-default.active:focus,.btn-default.active:hover,.btn-default:active.focus,.btn-default:active:focus,.btn-default:active:hover,.open>.dropdown-toggle.btn-default.focus,.open>.dropdown-toggle.btn-default:focus,.open>.dropdown-toggle.btn-default:hover{
 color:#333;
-background-color:#d4d4d4;
-border-color:#8c8c8c
+background-color:white;
+border-color:#ff7a00
 }
 .btn-default.active,.btn-default:active,.open>.dropdown-toggle.btn-default{
 background-image:none
@@ -3051,8 +3052,8 @@ background-color:#f5f5f5
 .dropdown-menu>.active>a,.dropdown-menu>.active>a:focus,.dropdown-menu>.active>a:hover{
 color:#ff7a00;
 text-decoration:none;
-background-color:#F0F0F0;
-outline:0
+background-color:white;
+outline: 1px #ff7a00
 }
 .dropdown-menu>.disabled>a,.dropdown-menu>.disabled>a:focus,.dropdown-menu>.disabled>a:hover{
 color:#777
@@ -3440,7 +3441,7 @@ border-color:#eee #eee #ddd
 color:#555;
 cursor:default;
 background-color:#fff;
-border:1px solid #ddd;
+border:1px solid #ff7a00;
 border-bottom-color:transparent
 }
 .nav-tabs.nav-justified{
@@ -3474,11 +3475,11 @@ margin-right:0;
 border-radius:4px;
 }
 .nav-tabs .nav-justified>.active>a,.nav-tabs.nav-justified>.active>a:focus,.nav-tabs.nav-justified>.active>a:hover{
-border:1px solid #ddd;
+border:1px solid #ff7a00;
 }
 @media (min-width:850px){
 .nav-tabs.nav-justified>li>a{
-border-bottom:1px solid #ddd;
+border-bottom:1px solid #ff7a00;
 border-radius:4px 4px 0 0
 }
 .nav-tabs.nav-justified>.active>a,.nav-tabs.nav-justified>.active>a:focus,.nav-tabs.nav-justified>.active>a:hover{
@@ -3518,6 +3519,8 @@ text-align:center;
     color:#5a5a5a;
     font-size:26px;
     font-weight:bold;
+    border-right: 2px solid #d5d5d5;
+    border-left: 2px solid #fff;
 }
 @media (max-width:1200px) and (min-width:900px){
     .nav-justified>li>a{
@@ -3529,9 +3532,11 @@ text-align:center;
         font-size:16px;
     }
 }
+/** put box on active navbar items HELLO */ 
 .nav-justified>li>a:focus, .nav-justified>li>a:hover, .nav-justified>.active>a{
-    background-color:#F0F0F0;
+    background-color:white;
     color:#ff7a00;
+    border-top:2px solid #ff7a00;
 }
 .nav-justified>.dropdown .dropdown-menu{
 top:auto;
@@ -3555,11 +3560,11 @@ margin-right:0;
 border-radius:4px
 }
 .nav-tabs-justified>.active>a,.nav-tabs-justified>.active>a:focus,.nav-tabs-justified>.active>a:hover{
-border:1px solid #ddd
+border:1px solid #ff7a00
 }
 @media (min-width:850px){
 .nav-tabs-justified>li>a{
-border-bottom:1px solid #ddd;
+border-bottom:1px solid #ff7a00;
 border-radius:4px 4px 0 0
 }
 .nav-tabs-justified>.active>a,.nav-tabs-justified>.active>a:focus,.nav-tabs-justified>.active>a:hover{
@@ -3965,7 +3970,8 @@ background-color:transparent
 }
 .navbar-default .navbar-nav .open .dropdown-menu>.active>a,.navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus,.navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover{
 color:#555;
-background-color:#e7e7e7
+background-color:white
+border: 1px #ff7a00
 }
 .navbar-default .navbar-nav .open .dropdown-menu>.disabled>a,.navbar-default .navbar-nav .open .dropdown-menu>.disabled>a:focus,.navbar-default .navbar-nav .open .dropdown-menu>.disabled>a:hover{
 color:#ccc;
@@ -4072,12 +4078,14 @@ background-color:white;
 }
 
 .dropdown-menu li a:hover{
-    background-color:#F0F0F0;
+    background-color:white;
     color: #ff7a00;
+    border: 1px #ff7a00
 }
 .dropdown-menu li a:focus{
-    background-color:#F0F0F0;
+    background-color:white;
     color: #ff7a00;
+    border: #ff7a00
 }
 
 .dropdown:hover .dropdown-menu{
