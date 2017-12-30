@@ -1,0 +1,11 @@
+$(document).ready(function(){
+    $("#research").hover(
+        function(){
+            $("#research").addClass("active").fadeTo("slow");       
+        },
+        function(){
+            $("#research").fadeTo("slow").removeClass("active");
+        }
+     );
+     $('.carousel').carousel();
+});

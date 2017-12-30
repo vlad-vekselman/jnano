@@ -1,0 +1,55 @@
+.equipment-picture-area {
+    width: 33%; 
+    height: 100%; 
+    float: left;
+}
+
+.equipment-picture-area2 {
+    width: 50%; 
+    height: 100%; 
+    float: left;
+}
+
+
+.pic{
+    margin-left: auto; 
+    margin-right: auto; 
+    height: 85%; 
+    width: 120px;
+}
+
+.names p{
+    text-align: center;
+}
+
+.names p a {
+    font-size: 100%;
+    text-decoration: none;
+}
+
+.content .equipment-row2 {
+    height: 220px;
+}
+
+
+.content .equipment-row {
+    height: 160px;
+}
+
+.content .equipment-area {
+    height: 200px; 
+    width: 100%; 
+}
+
+.content .equipment-area img {
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding-top: 10px;
+}
+
+.content .equipment-area p {
+    word-wrap: break-word; 
+    margin: 10px 10px; 
+    font-size: 120%;
+}
