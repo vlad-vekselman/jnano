@@ -1,0 +1,141 @@
+<html>
+<!DOCTYPE html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="../CSS/main.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/supplemental.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/research.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type='text/javascript' src='Javascript,JQuery/effects.js'></script>
+-->
+        
+        
+        
+            <script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-74094125-1', 'auto');
+              ga('send', 'pageview');
+            </script>
+        
+    <title>Research:Atomistic Simulations of Plasma-Generated Nanomaterials</title>
+    </head>
+    
+    <body class="background">
+        <!--Logo area-->
+	<div class="smaller-logo">
+	<table>
+	<tr style="width:925px ; height:120px">
+	<td style="width: 700px; padding-left:20px; text-align:center">
+                <a href="http://nano.pppl.gov/index.html" style="text-decoration:none;"> 
+                    <p style="font-size:26px; font-weight:800; color:#ff7a00;">Laboratory for
+                        Plasma Nanosynthesis</p>
+                </a>   
+		<span style="font-size:20px; font-weight:800; color:grey;">Princeton Plasma Physics Laboratory</span>
+	</td>
+
+	<td style="width:225px; padding-right:10px">
+		<a href="http://www.pppl.gov"><img style="border:0px solid #5e5e70;" src="../Pictures/pppl-logo-3.png" width="220px" align="right"></a>
+	</td>
+	</tr>
+	</table>
+            </div>
+        
+        <!--navigation area-->
+        <div class="nav">
+            <div>
+                <p><a href="../about.html">About</a></p>
+            </div>            
+            <div class="active-nav">
+                <p><a href="../research.html">Research</a></p>
+            </div>
+            <div>
+                <p><a href="../people.html">People</a></p>
+            </div>
+            <div>
+                <p><a href="../equipment.html">Facilities</a></p>
+            </div>
+            <div>
+                <p><a href="../publications.html">Publications</a></p>
+            </div>
+        </div>
+  
+        <!--Main content-->
+        <div class="main">
+            <div class="sidebar">
+                <div class="side-navigation">
+<!--
+                    <div class="side-option-heading">
+                        <h3><a href="../research.html">Research</a></h3>
+                    </div>
+-->
+                    <div class="side-options">
+                        <div class="main-pane">
+                            <ul class="menu">
+                                <li><a href="background.html">Introduction to Plasma Nanosynthesis</a></li>
+                                <li class="separator"></li>
+                                <li><a href="arc-reactor.html">Plasma and Material Processes in Atmospheric Pressure Plasmas</a></li>
+                                <li class="separator"></li>
+                                <li><a class="active" href="atomistic-simulations.html">Atomistic Simulations of Plasma-Generated Nanomaterials</a></li>
+                                <li class="separator"></li>
+                                <li><a href="crbs.html">Coherent Rayleigh-Brillouion Scattering</a></li>
+                                <li class="separator"></li>
+                                <li><a href="lii.html">Laser-Induced Incandescence</a></li>
+                                <li class="separator"></li>
+                                <li><a href="lif.html">Laser-Induced Fluorescence</a></li>
+                                <li class="separator"></li>
+                                <li><a href="oes.html">Optical Emission Spectroscopy</a></li>
+                                <li class="separator"></li>
+                                <li><a href="plasma-theory.html">Theory and Simulations of Low Temperature Plasma Devices</a></li>
+                                <li class="separator"></li>
+                                <li><a href="plasma-modeling.html">Plasma Modeling: Ablation/Deposition in Arc Discharge </a></li>
+                                <li class="separator"></li>
+                                <li><a href="plasma-effects.html">Plasma Modeling: Plasma-Induced Effects on Nanoparticles</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-banner">
+            <div class="content">
+                <p class="heading">Atomistic Simulations of Plasma-Generated Nanomaterials</p>
+<!--                <p><b>Researcher(s): </b><a href="../People/people-profiles/igor-kaganovich.html" class="researcher-link">Igor Kaganovich</a></p><br>-->
+                    
+                <p class="menu-description">
+                    Plasma properties of the arc discharge will be simulated using appropriate kinetic or fluid simulation codes. For particle formation and nucleation we shall use a variety of atomistic codes: <a href="https://en.wikipedia.org/wiki/Density_functional_theory" target="_blank">DFT</a> (first-principles Density Functional Theory); SCC-DFTB (Self-Consistent Charge Tight Binding Density Functional Theory); Quantum-Classical Molecular Dynamics (QCMD), using SCC-SFTB; Car-Parrinello Molecular Dynamic (CPMD),  Classical Molecular dynamics (CMD); Kinetic Monte Carlo. Depending on level of the accuracy, and on the time, spatial and energy scales, a proper code will be chosen. The codes will mutually verify each other in the regions of their applicability overlap. Immediate multiscale modeling approach that can produce sensible understanding and data for the processes would be a stepwise-like approach where the output of classical and quantum classical MD  simulations  could provide reaction probabilities, and thus serve as input to other longer scale kinetic models like are kinetic Monte Carlo or rate-equations approaches. The computationally intensive state-of-the-art quantum chemistry packages (NWChem, VASP, Quantum Espresso)  will be applied to characterize in depth the structure and energetics of the few-component nanomaterials, with reasonable size simulation cells for understanding the multi-body nature of the interactions, using leadership class DOE (NCCS) and NSF (NICS) supercomputers, with many thousands of computing cores, accelerated by the GPU threading. Fully quantum DFT simulations, might be able to provide a detailed information on the static structure and energies, but are limited in practice to a few hundreds of atoms, and if used as a component in the quantum-classical MD, to ps rather that ns or longer time scales (even with the most powerful current computers).
+                    <br><br>
+                    Inability to treat the slow relaxation is one of the main drawbacks of the MD approach. Examples of questions to be addressed by atomistic codes are: What is leading to the spontaneous condensation of carbon into buckyballs and other fullerenes? How is CNT closed?  This is usually referred as a “pentagon road”. The formation of pentagon increases the stability of a growing hexagonal network by reducing the number of dangling bonds on its edge. These pentagons induce curvature in the sheet of carbon, leading to a complete closure. Another example refers to the problem of charging. In the plasma-volume growth of CNT’s, charging of the growing structure and its polarization is an important issue, but are readily omitted in the classical MD simulations. We will include these effects explicitly in two ways, a) Using semi-empirical quantum estimators, like is Electronegativity Equalization Method, EEM, to update the charging/polarization of the atoms during the system evolution.  b) Using QCMD based on SCC DFTB, which self consistently update charges of all atoms at each time step (typically fs).
+                    <br><br>
+                </p>
+               
+                <div style="clear: both"></div>
+        </div>
+        </div>
+
+                        <div class="footer">
+                    <div class="organizations">
+                        <div>
+                            <img src="../Pictures/doe-logo.png">
+                            <p>Princeton Plasma Physics Laboratory is a U.S. Department of Energy national laboratory managed by Princeton University.</p>
+                        </div>
+                        <div>
+                            <img src="../Pictures/princeton-logo.png">
+                            <p>Princeton Plasma Physics Laboratory<br>
+                               P.O. Box 451<br>
+                               Princeton, NJ 08543-0451<br>
+                               GPS: 100 Stellarator Road<br>
+                               Princeton, NJ, 08540<br>
+                              (609) 243-2000                                                    
+                            </p>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p>&copy; 2015 Princeton Plasma Physics Laboratory. All rights reserved.</p>
+                    </div>
+                </div>
+    </body>
+</html>

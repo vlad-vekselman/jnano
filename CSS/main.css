@@ -370,7 +370,8 @@ ul.nav {
     text-align:justify;
     margin-right:25%;
     margin-left:20%;
-    list-style-image:url(/Pictures/bullet.jpg);
+    list-style-type:decimal;
+    line-height: 25px;
     
 }
 .publication li a{
